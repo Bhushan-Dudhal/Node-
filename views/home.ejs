@@ -1,0 +1,43 @@
+<h1>Home Page Design </h1>
+
+<table border="2">
+    <tr>  
+        <th>SN</th>
+
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Email</th>
+
+    </tr>
+<% for(i=0;i<user_list.length;i++) { %>
+  <tr>
+  <td><%=i%> </td> 
+  <td><%=user_list[i].name%> </td> 
+   <td><%=user_list[i].mobile%></td>  
+   <td><%=user_list[i].email%></td>  
+
+</tr>
+
+<%
+}
+%>
+</table>
+
+<div class="row">
+<% for(i=0;i<user_list.length;i++) { %>
+
+    <div class="col-md-3">
+      BOX 1 
+    </div>
+    <%} %> 
+</div>
+
+
+
+
+
+
+
+
+
+%>
